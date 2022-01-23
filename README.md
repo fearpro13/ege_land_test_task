@@ -1,2 +1,5 @@
-# ege_land_test_task
-Тестовое задание для Ege land 23-01-2022
+Перед началом настройте .env файл и укажите !пустую! базу данных
+
+php artisan serve
+php artisan make:fake_data 10
+php artisan migrate:refresh 
