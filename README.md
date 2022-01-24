@@ -21,3 +21,10 @@ GET
 POST
 
 /user/save
+
+
+Paint
+
+GET
+
+/paint
