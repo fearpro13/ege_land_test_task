@@ -16,6 +16,15 @@ Route::get('/', function () {
     return redirect(url('/user'));
 });
 
+Route::group(['prefix' => 'paint', 'as' => 'paint.'], function () {
+    Route::post('/save', 'App\Http\Controllers\PaintController@savePaint');
+
+    Route::get('/', 'App\Http\Controllers\PaintController@paint');
+
+    Route::get('/gallery','App\Http\Controllers\PaintController@getPaints');
+});
+
+
 Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
     Route::post('/save', 'App\Http\Controllers\UserController@saveUserData');
 

@@ -1,7 +1,8 @@
 <html>
+<head>
+    @csrf
     @yield('scripts')
     @yield('styles')
-<head>
     @yield('head')
 </head>
 <body>
