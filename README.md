@@ -6,6 +6,8 @@ php artisan migrate:refresh
 
 php artisan make:fake_data 10
 
+mkdir /public/paints
+
 
 GET
 
